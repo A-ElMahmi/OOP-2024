@@ -4,11 +4,12 @@ package ie.tudublin;
 
 public class Main
 {
+	private static Cat ginger;
 
 	public void helloProcessing()
 	{
 		String[] a = {"MAIN"};
-        processing.core.PApplet.runSketch( a, new Arrays());
+        // processing.core.PApplet.runSketch( a, new HelloProcessing());
     }
 
 	public void doDogStuff()
@@ -26,6 +27,8 @@ public class Main
 	{
 		// Put your code here
 		System.out.println("cats are from space");
+
+		ginger = new Cat("Ginger");
 	}
 	
 	public static void main(String[] args)
@@ -61,6 +64,9 @@ public class Main
 		System.out.println("C: " + c.getName());
 		
 
+		for (int i = 0; i < 10; i++) {
+			ginger.kill();
+		}
 
 		m.helloProcessing();
 	}
